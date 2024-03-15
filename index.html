@@ -26,7 +26,7 @@
         <h1 class="heading">Yordan Yordanov</h1>
         <h1 class="headingSmall">Y. Yordanov</h1>
         <!-- home button -->
-        <div href="/" class="homeTop">
+        <div href="/" class="homeTop" onclick="clickMotion()">
           <div class="btnHome">Home</div>
         </div>
       </div>
@@ -103,6 +103,8 @@
         </div>
       </div>
 
+      <div class="push"></div>
+
       
       <!-- Lower text -->
       <!-- <p class="textDown">a small font</p> -->
@@ -137,5 +139,25 @@
         </h1>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        if (!hasTouch()) document.body.className += ' hasHover';
+      });
+
+      function clickMotion() {
+          // Add a short delay to revert the :active state
+          setTimeout(function() {
+              homeTop = document.querySelector('.homeTop');
+              homeTop.classList.remove('active');
+          }, 90);
+      }
+
+      function hasTouch() {
+        return (('ontouchstart' in window) ||
+          (navigator.maxTouchPoints > 0) ||
+          (navigator.msMaxTouchPoints > 0));
+      }
+    </script>
   </body>
 </html>

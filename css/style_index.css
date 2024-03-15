@@ -126,10 +126,17 @@ html,body {
     transition: background-color 0.25s;
 
     text-decoration: none;
-    cursor: pointer;
 }
 
-.homeTop:hover{
+
+.homeTop:active
+{
+    background: rgb(92, 214, 170);
+    background: linear-gradient(135deg, rgba(92, 214, 170,1) 0%, rgba(63, 212, 158,1) 100%);
+}
+
+body.hasHover .homeTop:hover
+{
     background: rgb(92, 214, 170);
     background: linear-gradient(135deg, rgba(92, 214, 170,1) 0%, rgba(63, 212, 158,1) 100%);
 }
@@ -255,9 +262,11 @@ html,body {
 .about{
     position: relative;
     padding-top: 50px;
+    padding-bottom: 50px;
     width: 100%;
-    height: 650px;
+    height: max-content;
     z-index: 3;
+    top: -1px;
     
     background: #24a6e2;
     background: linear-gradient(180deg, rgba(36, 150, 226,1) 0%, rgba(36, 125, 226,1) 100%);
@@ -284,7 +293,6 @@ html,body {
 
 .about-text-small{
     position: relative;
-    float: left;
     display: block;
     z-index: 3;
     margin: 0 25% 0 25%;
@@ -306,6 +314,7 @@ html,body {
     display: block;
     width: 100%;
     height: 35px;
+    top: -2px;
 
     background-color: #f6e6e0;
     -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
@@ -318,12 +327,9 @@ html,body {
 .skills{
     position: relative;
     width: 100%;
-    height: 1000px;
+    height: fit-content;
     padding-top: 80px;
-    
-    /* background: rgb(36, 166, 226);
-    background: linear-gradient(180deg, rgba(36, 150, 226,1) 0%, rgba(36, 125, 226,1) 100%); */
-    
+    padding-bottom: 80px;
 }
 
 .skills-text-big{
@@ -486,6 +492,12 @@ html,body {
     pointer-events: none;
 } */
 
+.push{
+    position: relative;
+    display: block;
+    height: 200px;
+}
+
 .blob1{
     position: absolute;
     z-index: 1;
@@ -531,11 +543,8 @@ html,body {
     -ms-user-select: none;
 }
 
-@media screen and (max-height: 450px) {
-    /* Small mobile phones*/
-}
-@media screen and (max-width: 868px) {
-    /* For mobile phones: */
+ @media screen and (max-width: 1025px) {
+    /* For big tablets: */
     .heading{
         display: block;
     }
@@ -543,7 +552,7 @@ html,body {
         display: none;
     }
     .greeting{
-        height: 680px;
+        height: 750px;
     }
     .greeting-text{
         position: absolute;
@@ -565,9 +574,6 @@ html,body {
     .angle{
         height: 60px;
     }
-    .about{
-        height: 800px;
-    }
     .about-text-big{
         margin: 0 0 0 10%;
     }
@@ -575,7 +581,6 @@ html,body {
         margin: 0 10% 0 10%;
     }
     .skills{
-        height: 900px;
         padding-top: 40px;
     }
     .skills-text-big{
@@ -588,72 +593,39 @@ html,body {
     .skills-tech-box{
         top: 30px;
     }
-    .textDown{
-        width: 90%;
-    }
-    .footer_text{
-        font-size: 12px;
-    }
-    .homeDown{
+    /* .homeDown{
         animation-name: move_next2;
         bottom: 5%;
     }
     .btnNext{
         animation-name: move_next2;
         bottom: 5%;
-    }
+    } */
 
     .blob1{
         margin-left: -80px;
         margin-top:  -150px;
-
     }
 }
-@media screen and (max-width: 768px) {
-    /* For mobile phones: */
+@media screen and (max-width: 769px) {
+    /* For small tablets: */
     .heading{
         display: none;
     }
     .headingSmall{
         display: block;
     }
-    .homeDown{
-        animation-name: move_next;
-        bottom: 20%;
-    }
-    .btnNext{
-        animation-name: move_next;
-        bottom: 20%;
-    }
-
     .greeting{
-        margin-top: 90px;
-        height: 630px;
-    }
-    .greeting-text{
-        position: absolute;
-        display: block;
-        width: 80%;
-        height:250px;
-        margin-left: 10%;
-        margin-top: 70px;
+        margin-top: 100px;
+        height: 700px;
     }
     .picture{
-        position: absolute;
-        display: block;
-        margin-left: 8%;
-        margin-right: 12%;
-        width: 80%;
-        top: auto;
-        bottom: -40px;
+        margin-left: 18%;
+        margin-right: 22%;
+        width: 60%;
     }
     .angle{
         height: 40px;
-    }
-
-    .about{
-        top: -1px;
-        height: 1300px;
     }
     .about-text-big{
         margin: 0 0 0 10%;
@@ -661,12 +633,9 @@ html,body {
     .about-text-small{
         margin: 0 10% 0 10%;
     }
-    .angle2{
-        top: -2px;
-    }
     .skills{
-        height: 1250px;
         padding-top: 0px;
+        padding-bottom: 40px;
     }
     .skills-text-big{
         margin-left: 10%;
@@ -677,6 +646,25 @@ html,body {
     }
     .skills-tech-box{
         top: 30px;
+    }
+    .blob1{
+        margin-left: -90px;
+        margin-top:  -130px;
+    }
+    .footer_text{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 430px) {
+    /* For mobile phones*/
+    .greeting{
+        margin-top: 90px;
+        height: 640px;
+    }
+    .picture{
+        margin-left: 8%;
+        margin-right: 12%;
+        width: 80%;
     }
     .blob1{
         margin-left: -90px;
