@@ -17,6 +17,8 @@
   <link rel='icon' type='image/png' href='/pics/favicon.ico'>
   <link type="text/css" rel="stylesheet" href="css/fonts.css">
   <link type="text/css" rel="stylesheet" href="css/style_index.css">
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript" src="/js/index.js"></script>
 </head>
 
 <body>
@@ -383,63 +385,6 @@
       </h1>
     </div>
   </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      if (!hasTouch()) document.body.className += ' hasHover';
-    });
-
-    function clickCV() {
-      clickMotion();
-      window.location.href = "/files/CV_March_2024_EN.pdf";
-    }
-
-    function clickRedditScraper() {
-      clickMotion();
-      window.location.href = "https://github.com/thr33bricks/Reddit_vids_scraper";
-    }
-
-    function clickAdvencedClicker() {
-      clickMotion();
-      window.location.href = "https://sourceforge.net/projects/advanced-clicker/";
-    }
-
-    function clickAccessify() {
-      clickMotion();
-      window.location.href = "https://photos.app.goo.gl/bWHWWTgikzbgVY5z7";
-    }
-
-    function clickParkompDemo() {
-      clickMotion();
-      window.location.href = "https://www.youtube.com/watch?v=A4iFyH3SW3w";
-    }
-
-    function clickParkompSite() {
-      clickMotion();
-      window.location.href = "https://parkomp.yourdan.uk";
-    }
-
-    function clickHome() {
-      clickMotion();
-      window.location.href = "/";
-    }
-
-    function clickMotion() {
-      // Add a short delay to revert the :active state
-      setTimeout(function () {
-        var elems = document.querySelectorAll(".active");
-        [].forEach.call(elems, function (el) {
-          el.classList.remove("active");
-        });
-      }, 90);
-    }
-
-    function hasTouch() {
-      return (('ontouchstart' in window) ||
-        (navigator.maxTouchPoints > 0) ||
-        (navigator.msMaxTouchPoints > 0));
-    }
-  </script>
 </body>
 
 </html>
