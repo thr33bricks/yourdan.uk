@@ -671,6 +671,65 @@ body.hasHover .btn:hover
     -ms-user-select: none;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    right: 0;
+    background: #2e2e2e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+    font-family: 'manrope_bold';
+    letter-spacing: 0.1em;
+    font-size: 20px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 36px;
+}
+
+.menu-side {
+    margin-top: 10px;
+}
+
+#menubtn{
+    display: none;
+}
+
+#servbtn{
+    display: unset;
+}
+
+#homebtn{
+    display: unset;
+}
+
  @media screen and (max-width: 1025px) {
     /* For big tablets: */
     .heading{
@@ -787,6 +846,17 @@ body.hasHover .btn:hover
     }
     .footer_text{
         font-size: 12px;
+    }
+
+    #servbtn{
+        display: none;
+    }
+    
+    #homebtn{
+        display: none;
+    }
+    #menubtn{
+        display: unset;
     }
 }
 @media screen and (max-width: 430px) {

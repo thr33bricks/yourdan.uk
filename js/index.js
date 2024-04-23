@@ -32,3 +32,13 @@ function clickHome() {
     clickMotion();
     window.location.href = "/";
 }
+
+function clickServices() {
+    clickMotion();
+    window.location.href = "/services.html";
+}
+
+function clickMenu() {
+    clickMotion();
+    openNav();this.blur();
+}
