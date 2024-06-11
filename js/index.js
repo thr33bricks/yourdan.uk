@@ -28,6 +28,11 @@ function clickParkompSite() {
     window.location.href = "https://parkomp.yourdan.uk";
 }
 
+function clickFileserver() {
+    clickMotion();
+    window.location.href = "https://files.yourdan.uk";
+}
+
 function clickHome() {
     clickMotion();
     window.location.href = "/";
