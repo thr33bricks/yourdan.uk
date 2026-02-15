@@ -1,10 +1,6 @@
 function clickCV() {
     clickMotion();
-<<<<<<< HEAD
-    window.location.href = "/files/CV_March_2024_EN.pdf";
-=======
     window.location.href = "/files/CV_October_2025_EN.pdf";
->>>>>>> 357cacefb3777282ddf1540d6e421b15dd1d31e9
 }
 
 function clickRedditScraper() {
@@ -37,14 +33,11 @@ function clickFileserver() {
     window.location.href = "https://files.yourdan.uk";
 }
 
-<<<<<<< HEAD
 function clickHomeAssistant() {
     clickMotion();
     window.location.href = "http://homeassistant.local:8123/lovelace/0";
 }
 
-=======
->>>>>>> 357cacefb3777282ddf1540d6e421b15dd1d31e9
 function clickHome() {
     clickMotion();
     window.location.href = "/";
@@ -58,8 +51,4 @@ function clickServices() {
 function clickMenu() {
     clickMotion();
     openNav();this.blur();
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 357cacefb3777282ddf1540d6e421b15dd1d31e9
