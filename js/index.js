@@ -33,6 +33,11 @@ function clickFileserver() {
     window.location.href = "https://files.yourdan.uk";
 }
 
+function clickHomeAssistant() {
+    clickMotion();
+    window.location.href = "http://homeassistant.local:8123/lovelace/0";
+}
+
 function clickHome() {
     clickMotion();
     window.location.href = "/";
