@@ -1,6 +1,6 @@
 function clickCV() {
     clickMotion();
-    window.location.href = "/files/CV_October_2025_EN.pdf";
+    window.location.href = "/files/CV_July_2026_EN.pdf";
 }
 
 function clickRedditScraper() {
