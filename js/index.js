@@ -3,19 +3,24 @@ function clickCV() {
     window.location.href = "/files/CV_July_2026_EN.pdf";
 }
 
-function clickRedditScraper() {
-    clickMotion();
-    window.location.href = "https://github.com/thr33bricks/Reddit_vids_scraper";
-}
-
 function clickAdvencedClicker() {
     clickMotion();
     window.location.href = "https://sourceforge.net/projects/advanced-clicker/";
 }
 
-function clickAccessify() {
+function clickLemonMonitorGit() {
     clickMotion();
-    window.location.href = "https://photos.app.goo.gl/bWHWWTgikzbgVY5z7";
+    window.location.href = "https://github.com/thr33bricks/LemonMonitor-firmware-community";
+}
+
+function clickLemonMonitorSite() {
+    clickMotion();
+    window.location.href = "https://lemon.yourdan.uk";
+}
+
+function clickEyeGuardGit() {
+    clickMotion();
+    window.location.href = "https://github.com/thr33bricks/eyeguard";
 }
 
 function clickParkompDemo() {

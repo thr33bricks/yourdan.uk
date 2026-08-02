@@ -42,7 +42,7 @@
       <h1 class="headingSmall">Y. Yordanov</h1>
       <!-- menu button -->
       <div id="menubtn" class="btn" style="width: 44px;" onclick="clickMenu()">
-        <img class="menu-side" src="/pics/menu.png" alt="Menu_image" height="20" width="20">
+        <img class="menu-side" src="pics/menu.png" alt="Menu_image" height="20" width="20">
       </div>
       <!-- services button -->
       <div id="servbtn" class="btn" style="width: 120px;" onclick="clickServices()">
@@ -81,11 +81,11 @@
     <div class="greeting">
       <div class="greeting-text">
         <p class="greeting-text-big">Hello, I'm Yordan!</p>
-        <p class="greeting-text-small text-small">a software developer with attention to detail</p>
+        <p class="greeting-text-small text-small">a computer engineer with attention to detail</p>
       </div>
 
       <!-- Image -->
-      <img src="pics/yordan2_compressed.png" class="picture" />
+      <img src="pics/yordan3_compressed.png" class="picture" />
     </div>
 
 
@@ -96,17 +96,19 @@
       <h1 class="blue-rectangle-text-big">About me 👋</h1>
       <div class="blue-rectangle-content">
         <p class="text-small-darker">
-          I am a passionate software developer with some web, desktop and embedded development experience. 
-          My primary focus is on backend development, often tinkering with computer vision 👁️. 
-          Being a hobbyist myself, I've worked on numerous hardware-related projects 🔧. 
-          Recently, I co-authored my first scientific article 📈.
-          I enjoy experimenting with 3D printing in my free time.<br><br>
+          I am a passionate computer engineer with experience across web, desktop, and embedded systems. 
+          While my primary focus is backend development, I frequently tinker with computer vision 👁️. 
+          In fact, I recently trained my first machine learning model to recognize eye states-even 
+          including a few of my own photos in the training dataset!<br><br>
 
-          I've been coding since I was in the 7th grade when I started with Arduino 💚 and I've been
-          curious about technology since primary school 🏫. I've received various awards over the years and won multiple competitions 🏆.<br><br>
+          Beyond software, I've worked on numerous hardware-related projects, a few mechanical engineering ones 🔧, 
+          and love experimenting with 3D printing in my free time.<br><br>
 
-          I have my own web server at home that runs Ubuntu Server (no GUI) and it currently powers 
-          all the services hosted on this website. 💻🥷
+          My love for technology started in primary school 🏫. By 7th grade, I was writing my first lines of code on an Arduino 💚. 
+          I've received various awards over the years and won multiple competitions 🏆.<br><br>
+
+          I maintain a home web server running Ubuntu Server (no GUI) which currently powers 
+          most of the services hosted on this website. 💻🥷
         </p>
       </div>
     </div>
@@ -253,6 +255,49 @@
           <div class="project-promo__item project">
             <div class="project__header">
               <div class="illustration">
+                <img src="pics/Lemon_monitor_512x512_transparent.png" alt="lemon_monitor_logo" style="width: 40%; float: right;">
+              </div>
+            </div>
+            <div class="project__details">
+              <div class="flow">
+                <p class="text-small-darker">Lemon monitor</p>
+                <p class="text-thin-darker">A tiny external hardware monitor for your PC.</p>
+                <p class="text-thin-darker">Zero-bloat, ultra-lightweight, and simple to use. 
+                  Built for the community, by the community.</p>
+
+                <div class="btn" style="float: left;" onclick="clickLemonMonitorGit()">
+                  <div class="btnText">GitHub</div>
+                </div>
+                <div class="btn" style="float: left;" onclick="clickLemonMonitorSite()">
+                  <div class="btnText">Website</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-promo__item project">
+            <div class="project__header">
+              <div class="illustration">
+                <img src="pics/eyeguard_logo.png" alt="eyeguard_logo" style="width: 40%; float: right;">
+              </div>
+            </div>
+            <div class="project__details">
+              <div class="flow">
+                <p class="text-small-darker">EyeGuard AI Eye Protection</p>
+                <p class="text-thin-darker">Real-time AI Eye Protection for Your Desktop.</p>
+                <p class="text-thin-darker">Monitors your eyes in real time and sends native 
+                  desktop notifications before strain sets in.</p>
+              </div>
+
+              <div class="btn" style="float: left;" onclick="clickEyeGuardGit()">
+                <div class="btnText">GitHub</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-promo__item project">
+            <div class="project__header">
+              <div class="illustration">
                 <img src="pics/parkomp_logo.png" alt="parkomp_logo" style="width: 100%;">
               </div>
             </div>
@@ -269,51 +314,8 @@
                   <div class="btnText">Demo</div>
                 </div>
                 <div class="btn" style="float: left;" onclick="clickParkompSite()">
-                  <div class="btnText">Site</div>
+                  <div class="btnText">Website</div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-promo__item project">
-            <div class="project__header">
-              <div class="illustration">
-                <img src="pics/Accessify_logo.png" alt="accessify_logo" style="width: 100%;">
-              </div>
-            </div>
-            <div class="project__details">
-              <div class="flow">
-                <p class="text-small-darker">Accessify</p>
-                <p class="text-thin-darker">Access control system intended for use in
-                  residential complexes and industrial facilities.
-                  Based on Arduino Mega. It is meant to be
-                  managed with a Windows application written in
-                  C#.</p>
-
-                <div class="btn" style="float: left;" onclick="clickAccessify()">
-                  <div class="btnText">Design</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-promo__item project">
-            <div class="project__header">
-              <div class="illustration">
-                <img src="pics/download_arrow.png" alt="reddit_scraper_logo" style="width: 40%; float: right;">
-              </div>
-            </div>
-            <div class="project__details">
-              <div class="flow">
-                <p class="text-small-darker">Reddit video scraper</p>
-                <p class="text-thin-darker">Keeps track of the hottest reddit videos and saves them.</p>
-                <p class="text-thin-darker">Stores video data into a MySQL database and then downloads
-                  videos to disk. Finally, puts the videos into compilations with a maximal desired length.
-                  Written in Python.</p>
-              </div>
-
-              <div class="btn" style="float: left;" onclick="clickRedditScraper()">
-                <div class="btnText">Git</div>
               </div>
             </div>
           </div>
@@ -327,13 +329,13 @@
             <div class="project__details">
               <div class="flow">
                 <p class="text-small-darker">Advanced clicker</p>
-                <p class="text-thin-darker">An easy-to-use program for clicking automation, autoclicker.</p>
-                <p class="text-thin-darker">It can be used for performing tasks which need many clicks or just for
-                  cheating at click-based games.A friend of mine used it to renew a free Minecraft server every hour
-                  by autoclicking at the "I'm not a robot" captcha. How ironic!</p>
+                <p class="text-thin-darker">An easy-to-use application for clicking automation.</p>
+                <p class="text-thin-darker">It can be used for automating boring tasks, 
+                  cheating at click-based games or maybe solving the "I'm not a robot" captcha. 
+                  If somebody asks you did't get this app from me.</p>
 
                 <div class="btn" style="float: left;" onclick="clickAdvencedClicker()">
-                  <div class="btnText">Link</div>
+                  <div class="btnText">Website</div>
                 </div>
               </div>
             </div>
