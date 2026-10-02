@@ -1,6 +1,6 @@
 function clickCV() {
     clickMotion();
-    window.location.href = "/files/CV_September_2026_EN.pdf";
+    window.location.href = "/files/CV_October_2026_EN.pdf";
 }
 
 function clickAdvencedClicker() {
